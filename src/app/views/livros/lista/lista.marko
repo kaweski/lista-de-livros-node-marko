@@ -1,0 +1,36 @@
+<include('../../skeleton/skeleton.marko')>
+
+    <@name>Listagem de livros</@name>
+
+    <@content>
+
+        <p>
+            <a href="/livros/form" class="btn btn-primary">Cadastrar livro</a>
+        </p>
+
+        <table id="livros" class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Preço</th>
+                    <th>Editar</th>
+                    <th>Remover</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="livro_${livro.id}" for (livro in data.livros)>
+                    <td>${livro.id}</td>
+                    <td>${livro.titulo}</td>
+                    <td>${livro.preco}</td>
+                    <td><a href="/livros/form/${livro.id}">Editar</a></td>
+                    <td><a href="#" data-ref="${livro.id}" data-type="remocao">Remover</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <script src="/estatico/js/scripts.js"></script>
+
+    </@content>
+
+</include>

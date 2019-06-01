@@ -1,0 +1,27 @@
+<include('../../skeleton/skeleton.marko')>
+
+    <@name>Login</@name>
+
+    <@content>
+
+        <div if(data.mensagem)>
+            <div class="alert alert-danger">
+                ${data.mensagem}
+            </div>
+        </div>
+
+        <form action="/login" method="post">
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Insira seu e-mail">
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" class="form-control" name="senha" id="senha" placeholder="Senha">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+        </form>
+
+    </@content>
+
+</include>

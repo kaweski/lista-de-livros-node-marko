@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title><include(input.name)/></title>
+
+        <link rel="stylesheet" href="/estatico/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/estatico/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="/estatico/css/styles.css" />
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-code"></i>
+                </a>
+                <span>
+                    Desenvolvimento Backend em Node.js
+                </span>
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-4"><include(input.name)/></h1>
+            </div>
+        </div>
+        
+        <div class="container">
+            <include(input.content)/>
+        </div>
+
+        <footer class="jumbotron footer">
+            <div class="container">
+                <div class="row align-items-center justify-content-start">
+                    <div class="col-2">
+                        <ul class="list-unstyled list-inline social-list">
+                            <li class="list-inline-item">
+                                <a href="http://www.github.com/naweskil" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="http://www.linkedin.com/in/isadorakaweski" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="http://www.twitter.com/kaweskisa" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-8">
+                        <p><i class="fas fa-code"></i></p>
+                        <p>Trabalho desenvolvido para a disciplina <strong>Desenvolvimento Back-end</strong>, ministrada pelo professor Flávio Laper.</p>
+                        <p>Desenvolvido por Natasha Kaweski, utilizando <a href="https://nodejs.org/en/" target="_blank">Node.js</a> e bibliotecas como <a href="https://markojs.com/" target="_blank">Marko.js</a> 
+                            e <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> para renderização do front-end.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/estatico/js/font-awesome.min.js"></script>
+
+    </body>
+</html>

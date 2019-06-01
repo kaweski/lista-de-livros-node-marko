@@ -1,0 +1,47 @@
+<include('../../skeleton/skeleton.marko')>
+
+    <@name>Livro</@name>
+
+    <@content>
+
+        <div if(data.errosValidacao)>
+            <div class="alert alert-danger" for(erro in data.errosValidacao)>
+                ${erro.param} - ${erro.msg}
+            </div>
+        </div>
+
+        <form action="/livros/form" method="post">
+
+            <div if(data.livro.id)>
+                <input type="hidden" name="_method" value="PUT">
+                <input type="hidden" name="id" value="${data.livro.id}">
+            </div>
+
+            <div class="form-group">
+                <label for="titulo">Titulo:</label>
+                <input type="text" id="titulo" name="titulo" value="${data.livro.titulo}" placeholder="Informe o título do livro" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label for="preco">Preço:</label>
+                <input type="text" id="preco" name="preco" placeholder="150.25" value="${data.livro.preco}" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label for="descricao">Descrição:</label>
+                <textarea cols="20" rows="3" id="descricao" name="descricao" placeholder="Descreva o livro" class="form-control">${data.livro.descricao}</textarea>
+            </div>
+
+            <div class="row align-items-center justify-content-space">
+                <div class="col">
+                    <a href="/livros" class="btn btn-secondary">Voltar</a>
+                </div>
+                <div class="col">
+                    <div class="text-right">
+                        <button type="submit" class="btn btn-primary btn-lg">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </@content>
+
+</include>
