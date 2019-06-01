@@ -2,9 +2,9 @@ Trabalho autoinstrucional de desenvolvimento back-end
 =====================================================
 
 Escolha de tecnologia:
-=====================
+----------------------
 
-Node.js é uma plataforma construída sobre o motor JavaScript do Google Chrome para facilmente construir aplicações de rede rápidas e escaláveis. Node.js usa um modelo de I/O direcionada a evento não bloqueante que o torna leve e eficiente, ideal para aplicações em tempo real com troca intensa de dados através de dispositivos distribuídos.
+[Node.js](https://nodejs.org/en/) é uma plataforma construída sobre o motor JavaScript do Google Chrome para facilmente construir aplicações de rede rápidas e escaláveis. Node.js usa um modelo de I/O direcionada a evento não bloqueante que o torna leve e eficiente, ideal para aplicações em tempo real com troca intensa de dados através de dispositivos distribuídos.
 
 Node é usado para fornecer uma maneira fácil para construir programas de rede escaláveis, usando modelo de programação orientada a evento.
 
@@ -15,12 +15,12 @@ O motor JavaScript V8 é o motor que a Google usa com seu navegador Chrome. Pouc
 A escolha dessa ferramenta foi feita basicamente porque o Node é fácil para desenvolver, fácil para manter. Sem frameworks complicados de Orientação a Objeto, sem interfaces, nenhum potencial para o excesso de arquitetura de qualquer coisa. Basta escutar um evento, escrever uma função de callback, e o Node toma conta de tudo.
 
 Instalação:
-===========
+-----------
 
 Pode instalar o Node clicando no botão de download do próprio site do [Node.js](https://nodejs.org/en/). E pronto, ele já está instalado na sua máquina.
 
 Modo de utilização:
-===================
+-------------------
 
 No projeto criado para este trabalho:
 
