@@ -14,6 +14,20 @@ O motor JavaScript V8 é o motor que a Google usa com seu navegador Chrome. Pouc
 
 A escolha dessa ferramenta foi feita basicamente porque o Node é fácil para desenvolver, fácil para manter. Sem frameworks complicados de Orientação a Objeto, sem interfaces, nenhum potencial para o excesso de arquitetura de qualquer coisa. Basta escutar um evento, escrever uma função de callback, e o Node toma conta de tudo.
 
+Descrição do projeto:
+---------------------
+
+- O sistema permite o usuário fazer login.
+- Ao fazer login, o usuário possui uma lista de livros.
+- A lista possui um número de livros.
+- O usuário pode interagir com esses livros da lista, CRUD (criar mais um livro, ler, atualizar ou deletar).
+- Outros usuários não podem interagir com as listas de outros, somente com as suas próprias listas.
+
+![Entidade-relacionamento](https://github.com/naweskil/nodejs-project/blob/master/src/app/public/imagens/relacionamento_entidade_2.png "Entidade-relacionamento")
+
+- Um usuário possui vários livros vinculado à ele.
+- Um livro está vinculada à somente um usuário.
+
 Instalação:
 -----------
 
