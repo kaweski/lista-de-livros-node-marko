@@ -1,5 +1,8 @@
-Trabalho autoinstrucional de desenvolvimento back-end
-=====================================================
+📚 Lista de livros
+==================
+
+Este é um trabalho desenvolvido para a disciplina *Desenvolvimento Back-end*, ministrada pelo professor Flávio Laper, na Universidade FUMEC.
+Utilizando do [Node.js](https://nodejs.org/en/) como plataforma back-end, [SQLite](https://www.npmjs.com/package/sqlite3) para o banco de dados do projeto e bibliotecas como [Marko.js](https://markojs.com/) e [Bootstrap](https://getbootstrap.com/) para renderização do front-end.
 
 Escolha de tecnologia:
 ----------------------
